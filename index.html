@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" />
+        </div>
+
+        <div class="menu">
+
+            <li>
+                <a href="">NỮ</a>
+                <ul class="sub-menu">
+                    <li> <a href="">Hàng mới về</a> </li>
+                    <li> <a href="">Collection</a> </li>
+                    <li>
+                        <a href="">Áo</a>
+                        <ul>
+                            <li> <a href="">Áo sơ mi</a> </li>
+                            <li> <a href="">Áo thun</a> </li>
+                            <li> <a href="">Áo Vest</a> </li>
+                            <li> <a href="">Áo khoác</a> </li>
+                            <li> <a href="">Áo len</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Quần</a>
+                        <ul>
+                            <li> <a href="">Quần jean</a> </li>
+                            <li> <a href="">Quần lửng</a> </li>
+                            <li> <a href="">Quần dài</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Đầm nữ</a>
+                        <ul>
+                            <li> <a href="">Đầm thun</a> </li>
+                            <li> <a href="">Đầm</a> </li>
+                            <li> <a href="">Senora</a> </li>
+                            <li> <a href="">Jumpsuit</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="">NAM</a>
+                <ul class="sub-menu">
+                    <li> <a href="">Hàng mới về</a> </li>
+                    <li> <a href="">Flourish 18 (men)</a> </li>
+                    <li> <a href="">Nature soft</a> </li>
+                    <li>
+                        <a href="">Áo</a>
+                        <ul>
+                            <li> <a href="">Áo sơ mi</a> </li>
+                            <li> <a href="">Áo thun</a> </li>
+                            <li> <a href="">Áo Vest</a> </li>
+                            <li> <a href="">Áo khoác</a> </li>
+                            <li> <a href="">Áo len</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Quần</a>
+                        <ul>
+                            <li> <a href="">Quần jean</a> </li>
+                            <li> <a href="">Quần lửng</a> </li>
+                            <li> <a href="">Quần dài</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="">TRẺ EM</a>
+                <ul class="sub-menu">
+                    <li> <a href="">Hàng mới về</a> </li>
+                    <li>
+                        <a href="">Bé gái</a>
+                        <ul>
+                            <li> <a href="">Quần</a> </li>
+                            <li> <a href="">Áo</a> </li>
+                            <li> <a href="">Zuýp</a> </li>
+                            <li> <a href="">Váy</a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Bé trai</a>
+                        <ul>
+                            <li> <a href="">Quần</a> </li>
+                            <li> <a href="">Áo</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="">SALE</a>
+                <ul class="sub-menu">
+                    <li> <a href="">Nam</a> </li>
+                    <li> <a href="">Nữ</a> </li>
+                    <li> <a href="">Trẻ em</a> </li>
+                </ul>
+            </li>
+            <li>
+                <a href="">HOT ITEM</a>
+                <ul class="sub-menu">
+                    <li> <a href="">Best seller</a> </li>
+                </ul>
+            </li>
+            <li>
+                <a href="">BST</a>
+                <ul class="sub-menu">
+                    <li> <a href="">Nam</a> </li>
+                    <li> <a href="">Nữ</a> </li>
+                    <li> <a href="">Trẻ em</a> </li>
+                </ul>
+            </li>
+            <li> <a href="">THÔNG TIN</a></li>
+
+
+        </div>
+        <div class="others">
+
+            <li><input placeholder="Tìm kiếm" type="text" />  </li>
+            <li> ĐƠN HÀNG </li>
+            <li> TÀI KHOẢN </li>
+            <li> GIỎ HÀNG </li>
+
+
+        </div>
+    </header>
+    <section id="Slider">
+        <div class="aspect-ratio-169">
+            <img src="assets/image1.jpg" />
+            <img src="assets/image2.jpg" />
+            <img src="assets/image3.jpg" />
+            <img src="assets/image4.jpg" />
+        </div>
+    </section>
+    <section class="app-container">
+        <p> Tải ứng dụng Ivy moda</p>
+        <div class="app-google">
+            <img src="assets/Appstore.jpg" />
+            <img src="assets/GooglePlay.jpg" />
+        </div>
+        <p> Nhận bản tin Ivy moda</p>
+        <input type="text" placeholder="Nhập email của bạn ..." />
+    </section>
+</body>
+<script>
+    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
+    const imgContainer = document.querySelector('.aspect-ratio-169')
+    let imgNum = imgPosition.length
+    let index = 0
+    imgPosition.forEach(function (image, index) {
+        image.style.left = index * 100 + "%";
+    })
+    function imgSlide () {
+        index++;
+        if (index >= imgNum) index = 0;
+        imgContainer.style.left = "-" + index * 100 + "%";
+    }
+    setInterval(imgSlide,1000)
+</script>
+</html>

@@ -1,0 +1,123 @@
+﻿body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+li
+{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+
+}
+header 
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 50px;
+    height: 70px;
+    align-items: center;
+    
+}
+.logo
+{
+    flex: 1;
+}
+.menu
+{   
+    flex: 3;
+    display: flex;  
+}
+.menu > li {
+    padding: 0 12px;
+    position: relative;
+}
+.menu > li:hover .sub-menu {
+    visibility: visible;
+}
+.sub-menu {
+    position: absolute;
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 20px;
+    visibility: hidden;
+    z-index: 1;
+    background: #ffffff;
+}
+.sub-menu ul {
+    padding-left: 20px;
+}
+.sub-menu > li a {
+        font-weight: normal;
+}
+
+.menu li  a {
+        font-size: 12px;
+        font-weight: bold;
+        display: block;
+        line-height: 20px;
+}
+
+.others {
+    flex: 2;
+    font-size: small;
+    display: flex;
+}
+.others > li {
+    padding: 0 12px;
+}
+    .others > li:first-child input {
+        width: 100%;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #333;
+        outline: none;
+    }
+.others >li:first-child i{
+    position: absolute;
+    right: 10px;
+}
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    
+}
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.app-container {
+    text-align: center;
+    align-items: center;
+    padding: 150px 0 50px 0;
+}
+.app-container p {
+    line-height: 20px;
+    font-size: 17px;
+    color: #000000;
+    font-weight: bold;
+}
+.app-container input {
+    margin-top: 25px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    width: 500px;
+    text-align: center;
+    padding-bottom: 20px;
+    outline: none;
+}
+.app-google {
+    margin: 50px;
+}
+.app-google img {
+    height: 50px;
+}
